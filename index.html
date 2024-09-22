@@ -16,14 +16,43 @@
         body{
             font-family: "Lexend", sans-serif;
         }
+        .primary-color{
+            color:rgb(17, 17, 17);
+        }
+        .gray-color{
+            color:rgba(17, 17, 17, 0.7);
+        }
     </style>
 </head>
-<body>
-    <header>
-        <h1>hello jahid how are you</h1>
+<body class="">
+    <header class="bg-[#F9F7F3] w-full">
+        <!-- nav section -->
+        <nav class="lg:w-9/12 w-11/12 mx-auto flex justify-between py-5">
+            <!-- blog btn -->
+            <div>
+                <button class="border-2 rounded-md primary-color py-2 px-4 bg-[#B4F461] font-medium text-[18px]">Blog</button>
+            </div>
+            <!-- nav title -->
+             <div class="flex items-center gap-2">
+                <img src="./assets/logo.png" alt="">
+                <h4 class="text-[18px], font-semibold primary-color">Donate Bangladesh</h4>
+             </div>
+             <!-- my balance -->
+              <div class="gray-color flex items-center gap-2">
+                <p>
+                    <img src="./assets/coin.png" alt="">
+                </p>
+                <p>00</p>
+                <p class="font-medium">BDT</p>
+              </div>
+        </nav>
     </header>
-    <main>
-
+    <main class="w-11/12 lg:w-9/12 mx-auto">
+        <!-- tab for donation and history -->
+         <div class=" mt-12 flex justify-center gap-3">
+            <button class="bg-[#B4F461] py-3 px-3 rounded-md text-[18px] font-medium primary-color">Donation</button>
+            <button class="bg-gray-200 py-3 px-3 rounded-md text-[18px] font-medium primary-color ">History</button>
+         </div>
     </main>
     <footer>
 
