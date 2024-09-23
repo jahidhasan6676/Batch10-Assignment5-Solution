@@ -47,7 +47,7 @@
                 <p>
                     <img src="./assets/coin.png" alt="">
                 </p>
-                <p>10000</p>
+                <p id="my-balance" class="font-medium">10000</p>
                 <p class="font-medium">BDT</p>
             </div>
         </nav>
@@ -55,13 +55,14 @@
     <main class="w-11/12 lg:w-9/12 mx-auto">
         <!-- tab for donation and history -->
         <div class=" mt-14 flex justify-center gap-3">
-            <button class="bg-[#B4F461] py-3 px-3 rounded-md text-[18px] font-medium primary-color">Donation</button>
-            <button class="bg-gray-100 py-3 px-3 rounded-md text-[18px] font-medium primary-color ">History</button>
+            <button id="donation-tab" class="bg-[#B4F461] py-3 px-3 rounded-md text-[18px] font-medium primary-color">Donation</button>
+            <button id="history-tab" class="bg-gray-100 py-3 px-3 rounded-md text-[18px] font-medium primary-color ">History</button>
         </div>
 
-
-        <!-- donate for flood Noakhali part start -->
-        <div class="flex  gap-10   p-4 rounded-lg border-2 border-gray-200 mt-8">
+        <!-- 3 donation card -->
+        <div id="card-container">
+            <!-- donate for flood Noakhali part start -->
+        <div class="lg:flex  gap-10   p-4 rounded-lg border-2 border-gray-200 mt-8">
             <!-- image part -->
             <div class="flex-1">
                 <img class=" rounded-md" src="./assets/noakhali.png" alt="">
@@ -70,11 +71,11 @@
             <div class="flex-1">
 
                 <!-- donation balance -->
-                <div class="w-36 p-1 rounded-md flex items-center gap-2 mb-10 bg-gray-200 gray-color">
+                <div class="w-36 p-1 rounded-md flex items-center gap-2 mb-10 bg-gray-200 gray-color lg:mt-0 mt-3">
                     <p>
                         <img src="./assets/coin.png" alt="">
                     </p>
-                    <p class="font-medium">12000</p>
+                    <p id="donation-amount-noakhali" class="font-medium">12000</p>
                     <p class="font-medium">BDT</p>
 
                 </div>
@@ -90,20 +91,20 @@
                 </div>
                 <!-- input field -->
                 <div class="">
-                    <input type="text" placeholder="Write Donation Amount"
+                    <input id="input-donation-noakhali" type="text" placeholder="Write Donation Amount"
                         class=" w-full p-3 rounded-lg border-gray-300 input mt-16" />
                 </div>
                 <!-- donation btn -->
                 <div class="mt-4 text-center">
-                    <button class="bg-[#B4F461] py-2 px-4 rounded-md text-[18px] font-medium primary-color">Donate
+                    <button id="donate-btn-noakhali" class="bg-[#B4F461] py-2 px-4 rounded-md text-[18px] font-medium primary-color">Donate
                         Now</button>
                 </div>
             </div>
         </div>
-        <!-- donate for flood Noakhali -->
+        <!-- donate for flood Noakhali end-->
 
         <!-- donate for flood Feni part start -->
-        <div class="flex  gap-10   p-4 rounded-lg border-2 border-gray-200 mt-8">
+        <div class="lg:flex  gap-10   p-4 rounded-lg border-2 border-gray-200 mt-8">
             <!-- image part -->
             <div class="flex-1">
                 <img class=" rounded-md" src="./assets/feni.png" alt="">
@@ -112,11 +113,11 @@
             <div class="flex-1">
 
                 <!-- donation balance -->
-                <div class="w-36 p-1 rounded-md flex items-center gap-2 mb-10 bg-gray-200 gray-color">
+                <div class="w-36 p-1 rounded-md flex items-center gap-2 mb-10 bg-gray-200 gray-color lg:mt-0 mt-3">
                     <p>
                         <img src="./assets/coin.png" alt="">
                     </p>
-                    <p class="font-medium">12000</p>
+                    <p id="donation-amount-feni" class="font-medium">12000</p>
                     <p class="font-medium">BDT</p>
 
                 </div>
@@ -129,12 +130,12 @@
                 </div>
                 <!-- input field -->
                 <div class="">
-                    <input type="text" placeholder="Write Donation Amount"
+                    <input id="input-donation-feni" type="text" placeholder="Write Donation Amount"
                         class=" w-full p-3 rounded-lg border-gray-300 input mt-16" />
                 </div>
                 <!-- donation btn -->
                 <div class="mt-4 text-center">
-                    <button class="bg-[#B4F461] py-2 px-4 rounded-md text-[18px] font-medium primary-color">Donate
+                    <button id="donate-btn-feni" class="bg-[#B4F461] py-2 px-4 rounded-md text-[18px] font-medium primary-color">Donate
                         Now</button>
                 </div>
             </div>
@@ -142,7 +143,7 @@
         <!-- donate for flood Feni part end -->
 
         <!-- aid for injured people part start -->
-        <div class="flex  gap-10   p-4 rounded-lg border-2 border-gray-200 mt-8">
+        <div class="lg:flex  gap-10   p-4 rounded-lg border-2 border-gray-200 mt-8">
             <!-- image part -->
             <div class="flex-1">
                 <img class=" rounded-md" src="./assets/quota-protest.png" alt="">
@@ -151,11 +152,11 @@
             <div class="flex-1">
 
                 <!-- donation balance -->
-                <div class="w-36 p-1 rounded-md flex items-center gap-2 mb-10 bg-gray-200 gray-color">
+                <div class="w-36 p-1 rounded-md flex items-center gap-2 mb-10 bg-gray-200 gray-color lg:mt-0 mt-3">
                     <p>
                         <img src="./assets/coin.png" alt="">
                     </p>
-                    <p class="font-medium">12000</p>
+                    <p id="donation-amount-quota" class="font-medium">12000</p>
                     <p class="font-medium">BDT</p>
 
                 </div>
@@ -168,24 +169,31 @@
                 </div>
                 <!-- input field -->
                 <div class="">
-                    <input type="text" placeholder="Write Donation Amount"
+                    <input id="input-donation-quota" type="text" placeholder="Write Donation Amount"
                         class=" w-full p-3 rounded-lg border-gray-300 input mt-16" />
                 </div>
                 <!-- donation btn -->
                 <div class="mt-4 text-center">
-                    <button class="bg-[#B4F461] py-2 px-4 rounded-md text-[18px] font-medium primary-color">Donate
+                    <button id="donate-btn-quota" class="bg-[#B4F461] py-2 px-4 rounded-md text-[18px] font-medium primary-color">Donate
                         Now</button>
                 </div>
             </div>
         </div>
         <!-- aid for injured people part end -->
+        </div>
+
+        <!-- history-section -->
+         <div id="history-container" class="hidden">
+
+         </div>
 
 
     </main>
-    <footer>
-
+    <footer class=" w-full h-[100px] bg-[#F9F7F3] mt-14">
+        
     </footer>
-
+    <script src="./js/utilities.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
