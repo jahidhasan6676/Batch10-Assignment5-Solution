@@ -6,6 +6,14 @@ document.getElementById('donate-btn-noakhali').addEventListener('click', functio
     const donateBalance = getTextValueById('donation-amount-noakhali');
     const myBalance = getTextValueById('my-balance');
 
+    // validation check
+    if(isNaN(inputDonation) || inputDonation <= 0){
+        return alert('Invalid Number');
+    }
+    if( myBalance <= inputDonation){
+        return alert('Donation amount cannot exceed your main balance!')
+    }
+
     const donationCollect = donateBalance + inputDonation;
     const myCurrentBalance = myBalance - inputDonation;
     
@@ -35,6 +43,14 @@ document.getElementById('donate-btn-feni').addEventListener('click', function(){
     const donateBalance = getTextValueById('donation-amount-feni');
     const myBalance = getTextValueById('my-balance');
 
+    // validation check
+    if(isNaN(inputDonation) || inputDonation <= 0){
+        return alert('Invalid Number');
+    }
+    if( myBalance <= inputDonation){
+        return alert('Donation amount cannot exceed your main balance!')
+    }
+
     const donationCollect = donateBalance + inputDonation;
     const myCurrentBalance = myBalance - inputDonation;
     
@@ -60,6 +76,14 @@ document.getElementById('donate-btn-quota').addEventListener('click', function()
     
     const donateBalance = getTextValueById('donation-amount-quota');
     const myBalance = getTextValueById('my-balance');
+
+    // validation check
+    if(isNaN(inputDonation) || inputDonation <= 0){
+        return alert('Invalid Number');
+    }
+    if( myBalance <= inputDonation){
+        return alert('Donation amount cannot exceed your main balance!')
+    }
 
     const donationCollect = donateBalance + inputDonation;
     const myCurrentBalance = myBalance - inputDonation;
