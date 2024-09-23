@@ -107,6 +107,7 @@ document.getElementById('donation-tab').addEventListener('click', function(){
    donationTab.classList.remove('bg-gray-100');
 
    document.getElementById('card-container').classList.remove('hidden');
+   document.getElementById('history-container').classList.add('hidden');
    
     
 })
