@@ -27,7 +27,7 @@ document.getElementById('donate-btn-noakhali').addEventListener('click', functio
      historyDocuments.className = 'w-full border-2 border-gray-100 p-3 rounded-lg mt-5';
 
      historyDocuments.innerHTML = `<p class=" font-medium primary-color mb-2">${inputDonation.toFixed(2)} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
-     <p class="gray-color">Date: ${new Date().toLocaleString()}(Bangladesh Standard Times)`;
+     <p class="gray-color">Date: ${new Date().toLocaleString()}(Bangladesh Standard Times)</p>`;
  
      const historyContainer = document.getElementById('history-container');
      historyContainer.insertBefore(historyDocuments, historyContainer.firstChild);
